@@ -1,0 +1,114 @@
+/* Header */
+.header-section {
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 20px;
+  color: #333;
+}
+
+/* Banner */
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: linear-gradient(135deg, #333A40 0%, #1a5490 100%);
+  padding: 20px 40px;
+  clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+  min-width: 400px;
+}
+
+.banner-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.banner-subtitle {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Tabla */
+.table-container {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.table {
+  background: white;
+  border: 1px solid #dee2e6;
+}
+
+.table-header {
+  background-color: #333A40;
+  color: white;
+}
+
+.table-header th {
+  border: none;
+  padding: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.table tbody th,
+.table tbody td {
+  padding: 12px 15px;
+  vertical-align: middle;
+}
+
+/* Footer */
+.footer-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  margin-top: 30px;
+}
+
+.footer-text {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+

@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <!-- Header -->
+  <header class="header-section">
+    <h1 class="site-title">TuSegundazo.com</h1>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner-container">
+    <div class="banner-overlay">
+      <h2 class="banner-title">COMERCIALIZACIÓN DE AUTOMOTORES</h2>
+      <h3 class="banner-subtitle">NUEVOS Y USADOS</h3>
+    </div>
+    <img src="assets/images/banner-car.jpg" alt="Banner" class="banner-image">
+  </div>
+
+  <!-- Tabla de vehículos -->
+  <div class="table-container">
+    <table class="table table-striped">
+      <thead class="table-header">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Línea</th>
+          <th scope="col">Modelo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vehiculo of vehiculos; let i = index">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ vehiculo.marca }}</td>
+          <td>{{ vehiculo.linea }}</td>
+          <td>{{ vehiculo.modelo }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <p class="footer-text">
+      Contact us: +57 3102105253 - info&#64;tusegundazo.com - &#64;tusegundazo
+    </p>
+  </footer>
+</div>
+
