@@ -26,5 +26,13 @@ export class ListarVehiculosComponent implements OnInit {
       }
     });
   }
+
+  getTotalesPorMarca(): { marca: string, total: number }[] {
+    const marcas = [...new Set(this.vehiculos.map(v => v.marca))];
+    return marcas.map(marca => ({
+      marca: marca,
+      total: this.vehiculos.filter(v => v.marca === marca).length
+    }));
+  }
 }
 

@@ -33,6 +33,13 @@
         </tr>
       </tbody>
     </table>
+
+    <!-- Totales por marca -->
+    <div class="totales-container">
+      <p class="total-marca" *ngFor="let item of getTotalesPorMarca()">
+        Total {{ item.marca }}: {{ item.total }}
+      </p>
+    </div>
   </div>
 
   <!-- Footer -->

@@ -97,6 +97,19 @@
   vertical-align: middle;
 }
 
+/* Totales por marca */
+.totales-container {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.total-marca {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+}
+
 /* Footer */
 .footer-section {
   text-align: center;
