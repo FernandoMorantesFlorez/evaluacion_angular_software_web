@@ -1,12 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { AppComponent } from './app.component';
+import { VehiculosModule } from './vehiculos/vehiculos.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        HttpClientTestingModule,
+        VehiculosModule
       ],
       declarations: [
         AppComponent
@@ -26,11 +30,11 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('parcial-angular');
   });
 
-  it('should render title', () => {
+  it('should render the listar-vehiculos component', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('parcial-angular');
+    expect(compiled.querySelector('app-listar-vehiculos')).toBeTruthy();
   });
 });
 
